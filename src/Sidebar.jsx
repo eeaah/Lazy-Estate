@@ -1,4 +1,4 @@
-function Header(){
+function Sidebar(){
 
     return(
         <header>

@@ -10,10 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "antd": "^5.11.0",
     "papaparse": "^5.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-papaparse": "^4.4.0"
+    "react-papaparse": "^4.4.0",
+    "react-step-progress-bar": "^1.0.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
