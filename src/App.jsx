@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import Header from './Sidebar.jsx'
+import SideBar from './components/sidebar.jsx'
 import ParseCSV from './parser.jsx'
 
 function App() {
   return (
     <>
-      <Sidebar />
+      <SideBar />
     </>
   );
 

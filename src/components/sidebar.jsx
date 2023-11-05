@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import {
-  AppstoreOutlined,
-  ContainerOutlined,
-  DesktopOutlined,
-  MailOutlined,
-  MenuFoldOutlined,
-  MenuUnfoldOutlined,
-  PieChartOutlined,
+    DollarOutlined,
+    ContainerOutlined,
+    CarOutlined,
+    BankOutlined,
+    HomeOutlined,
+    ArrowDownOutlined,
+	CreditCardOutlined,
 } from "@ant-design/icons";
 import { Button, Menu } from "antd";
+
 function getItem(label, key, icon, children, type) {
   return {
     key,
@@ -19,53 +20,31 @@ function getItem(label, key, icon, children, type) {
   };
 }
 const items = [
-  getItem("Option 1", "1", <PieChartOutlined />),
-  getItem("Option 2", "2", <DesktopOutlined />),
-  getItem("Option 3", "3", <ContainerOutlined />),
-  getItem("Navigation One", "sub1", <MailOutlined />, [
-    getItem("Option 5", "5"),
-    getItem("Option 6", "6"),
-    getItem("Option 7", "7"),
-    getItem("Option 8", "8"),
-  ]),
-  getItem("Navigation Two", "sub2", <AppstoreOutlined />, [
-    getItem("Option 9", "9"),
-    getItem("Option 10", "10"),
-    getItem("Submenu", "sub3", null, [
-      getItem("Option 11", "11"),
-      getItem("Option 12", "12"),
-    ]),
-  ]),
+  getItem("Gross Monthly Income", "1", <DollarOutlined />),
+  getItem("Credit Card Payment", "2", <ContainerOutlined />),
+  getItem("Car Payment", "3", <CarOutlined />),
+  getItem("Student Loan Payments", "4", <BankOutlined />),
+  getItem("Appraised Value", "5", <HomeOutlined />),
+  getItem("Down Payment", "6", <ArrowDownOutlined />),
+  getItem("Loan Amount", "7", <BankOutlined />),
+  getItem("Monthly Mortgage Payment", "8", <HomeOutlined />),
+  getItem("CreditScore", "9", <CreditCardOutlined />),
 ];
-const App = () => {
-  const [collapsed, setCollapsed] = useState(false);
-  const toggleCollapsed = () => {
-    setCollapsed(!collapsed);
-  };
+const SideBar = () => {
   return (
     <div
       style={{
         width: 256,
       }}
     >
-      <Button
-        type="primary"
-        onClick={toggleCollapsed}
-        style={{
-          marginBottom: 16,
-        }}
-      >
-        {collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-      </Button>
       <Menu
         defaultSelectedKeys={["1"]}
         defaultOpenKeys={["sub1"]}
         mode="inline"
-        theme="dark"
-        inlineCollapsed={collapsed}
+        theme="light"
         items={items}
       />
     </div>
   );
 };
-export default App;
+export default SideBar;

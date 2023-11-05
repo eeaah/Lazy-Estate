@@ -6,7 +6,7 @@ import './parser.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ParseCSV />
+    {/* <ParseCSV /> */}
     <App />
   </React.StrictMode>,
 )
