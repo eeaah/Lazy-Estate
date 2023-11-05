@@ -1,14 +1,21 @@
-import Papa from 'react-papaparse'
+import React, { CSSProperties, useEffect } from 'react';
 
-const csv = await fetch('./src/data/HomeBuyerInfo.csv').then( res => res.text() );
+import Papa from 'papaparse'
 
-const message = () => {
-        Papa.parse(csv, {
-            download: true,
-            complete: function(results, file) {
-                console.log("Parsing complete:", results, file);
-            }
-        })
-};
+const csv = await fetch('./src/data/bruh.csv').then( res => res.text());
 
-export default message;
+export default function ParseCSV() {
+    useEffect(() => {
+        const fetchParseData = async() => {
+            Papa.parse(csv, {
+                download: true,
+                header: false,
+                delimiter: ",",
+                complete: ((result) => {
+                    console.log(result.data)
+                })
+            })
+        }
+        fetchParseData()
+    }, [])
+}
