@@ -31,7 +31,7 @@ export default class Forms extends Component {
     constructor(props) {
         super(props);
         this.state = {formnum: 1, outputforms: [
-            <GrossMonthlyIncome />,
+            <GrossMonthlyIncome enteredValue={arr[0]} />,
             <CreditCardPayment />,
             <CarPayment />,
             <StudentLoanPayments />,

@@ -8,9 +8,11 @@ const onChange = (value) => {
 };
 
 export default class GrossMonthlyIncome extends Component {
-  constructor(props) {
-    super(props);
-    
+  	constructor(props) {
+		super();
+    //   this.state = {
+    //     enteredVal: props.enteredVal
+	// 	}
   }
 
   render() {
@@ -33,7 +35,10 @@ export default class GrossMonthlyIncome extends Component {
             parser={(value) => value.replace(/\$\s?|(,*)/g, "")}
             onChange={onChange}
             size="large"
+			autoFocus = {true}
           />
+
+		  {}
         </center>
       </div>
     );

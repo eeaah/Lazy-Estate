@@ -8,6 +8,13 @@ const onChange = (value) => {
 };
 
 export default class LoanAmount extends Component {
+  constructor(props) {
+		super(props);
+		// this.state = {
+		// 	enteredVal: 0
+		// }
+
+  }
   render() {
     return (
       <div>
