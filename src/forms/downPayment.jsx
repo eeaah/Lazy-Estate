@@ -16,7 +16,7 @@ export default class DownPayment extends Component {
         </center>
         <div className="container">
           <div className="paragraph">
-            <p>An initial payment made when a home is bought on credit. This is the down payment on the house you are seeking to buy.</p>
+            <p>An initial payment made when a home is bought on credit. This is the <a href="https://en.wikipedia.org/wiki/Down_payment">down payment</a> on the house you are seeking to buy.</p>
           </div>
         </div>
         <center>

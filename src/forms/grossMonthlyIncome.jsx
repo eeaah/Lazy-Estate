@@ -8,6 +8,11 @@ const onChange = (value) => {
 };
 
 export default class GrossMonthlyIncome extends Component {
+  constructor(props) {
+    super(props);
+    
+  }
+
   render() {
     return (
       <div>
