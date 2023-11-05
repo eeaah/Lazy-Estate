@@ -42,20 +42,18 @@ export default class Forms extends Component {
     }
 }
 
-const headerStyle = {
-    textAlign: 'center',
-    color: '#fff',
-    height: 64,
-    paddingInline: 50,
-    lineHeight: '64px',
-    backgroundColor: 'rgb(22,119,255)',
-  };
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Layout>
-      <Header style={{headerStyle}}/>
+      <Header style={{backgroundColor:'rgb(22,119,255)'}}>
+        <center style={{color:'rgb(255,255,255)', fontFamily: 'tahoma, sans-serif'}}>
+            <font size="+3">
+            <b>LazyEstate</b>
+            </font>
+        </center>
+        </Header>
     </Layout>
     <Layout>
         <div style={{
