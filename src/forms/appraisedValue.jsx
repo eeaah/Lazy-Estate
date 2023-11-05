@@ -4,19 +4,19 @@ import eventBus from '../eventBus.jsx'
 import React, { Component } from 'react'
 
 const onChange = (value) => {
-  eventBus.dispatch("creditCardPayment", value)
+  eventBus.dispatch("appraisedValue", value)
 };
 
-export default class CreditCardPayment extends Component {
+export default class AppraisedValue extends Component {
   render() {
     return (
       <div>
         <center>
-          <h1>Credit Card Payment</h1>
+          <h1>Appraised Value</h1>
         </center>
         <div className="container">
           <div className="paragraph">
-            <p>Your average monthly credit card payment. A typical American spends $430 a month.</p>
+            <p>An appraised value is a professional assessment of the condition and worth of a your property at this time. The value of your property and/or home.</p>
           </div>
         </div>
         <center>

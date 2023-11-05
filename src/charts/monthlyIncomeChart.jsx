@@ -1,19 +1,37 @@
 import eventBus from '../eventBus.jsx'
 import 'chart.js'
+import { mincome } from '../parser.jsx'
+import Chart from 'chart.js/auto'
 
-const config = {
+var ctx = document.getElementById('monthlyIncome')
+let chart;
+let configuration = {
     type: 'scatter',
-    data: adat,
+    data: {
+        labels: mincome.map(element => indexOf(element)),
+        datasets: [{
+            label: 'Monthly Income',
+            data: mincome,
+            backgroundColor: 'rgb(255, 99, 132)',
+        }]
+    },
     options: {
-      scales: {
-        x: {
-          type: 'linear',
-          position: 'bottom'
+        scales: {
+            x: {
+                type: 'linear',
+                position: 'bottom',
+            }
         }
-      }
     }
-  };
+}
+
 
 export default function MonthlyIncomeChart() {
-    return <h1>Monthly Income Chart Goes Here</h1>
+    if (chart) {
+        chart.destroy();
+        chart = new Chart(ctx, configuration);
+      } else {
+        chart = new Chart(ctx, configuration);
+      }
+    return <MonthlyIncomeChart />
 }

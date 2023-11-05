@@ -4,19 +4,19 @@ import eventBus from '../eventBus.jsx'
 import React, { Component } from 'react'
 
 const onChange = (value) => {
-  eventBus.dispatch("creditCardPayment", value)
+  eventBus.dispatch("monthlyMortgagePayment", value)
 };
 
-export default class CreditCardPayment extends Component {
+export default class MonthlyMortgagePayment extends Component {
   render() {
     return (
       <div>
         <center>
-          <h1>Credit Card Payment</h1>
+          <h1>Monthly Mortgage Payment</h1>
         </center>
         <div className="container">
           <div className="paragraph">
-            <p>Your average monthly credit card payment. A typical American spends $430 a month.</p>
+            <p>The principal and interest payment on a mortgage is the main component of your monthly mortgage payment. The principal is the amount you borrowed and have to pay back, and interest is what the lender charges for lending you the money.</p>
           </div>
         </div>
         <center>

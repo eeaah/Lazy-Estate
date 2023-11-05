@@ -4,19 +4,19 @@ import eventBus from '../eventBus.jsx'
 import React, { Component } from 'react'
 
 const onChange = (value) => {
-  eventBus.dispatch("creditCardPayment", value)
+  eventBus.dispatch("carPayment", value)
 };
 
-export default class CreditCardPayment extends Component {
+export default class CarPayment extends Component {
   render() {
     return (
       <div>
         <center>
-          <h1>Credit Card Payment</h1>
+          <h1>Car Payment</h1>
         </center>
         <div className="container">
           <div className="paragraph">
-            <p>Your average monthly credit card payment. A typical American spends $430 a month.</p>
+            <p>The total montly amount you put towards car payments.</p>
           </div>
         </div>
         <center>

@@ -4,19 +4,19 @@ import eventBus from '../eventBus.jsx'
 import React, { Component } from 'react'
 
 const onChange = (value) => {
-  eventBus.dispatch("creditCardPayment", value)
+  eventBus.dispatch("downPayment", value)
 };
 
-export default class CreditCardPayment extends Component {
+export default class DownPayment extends Component {
   render() {
     return (
       <div>
         <center>
-          <h1>Credit Card Payment</h1>
+          <h1>Down Payment</h1>
         </center>
         <div className="container">
           <div className="paragraph">
-            <p>Your average monthly credit card payment. A typical American spends $430 a month.</p>
+            <p>An initial payment made when a home is bought on credit. This is the down payment on the house you are seeking to buy.</p>
           </div>
         </div>
         <center>
