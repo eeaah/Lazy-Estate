@@ -13,7 +13,7 @@ import DownPayment from './forms/downPayment.jsx'
 import LoanAmount from './forms/loanAmount.jsx'
 import MonthlyMortgagePayment from './forms/monthlyMortgagePayment.jsx'
 import CreditScore from './forms/creditScore.jsx'
-// import Results from './forms/results.jsx'
+import Results from './forms/results.jsx'
 // End forms
 import SideBar from './components/sidebar.jsx'
 import { Layout, theme } from 'antd';
@@ -40,7 +40,7 @@ export default class Forms extends Component {
             <LoanAmount />,
             <MonthlyMortgagePayment />,
             <CreditScore />,
-            // <Results />,
+            <Results values={arr}/>,
         ]}
     }
 

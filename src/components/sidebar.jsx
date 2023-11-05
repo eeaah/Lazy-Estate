@@ -7,6 +7,7 @@ import {
     HomeOutlined,
     ArrowDownOutlined,
     CreditCardOutlined,
+    CheckOutlined,
 } from "@ant-design/icons";
 import { Button, Menu } from "antd";
 import eventBus from '../eventBus.jsx'
@@ -25,7 +26,8 @@ export default class Sidebar extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {items: [
+        this.state = {
+          items: [
             this.getItem("Gross Monthly Income", "1", <DollarOutlined />),
             this.getItem("Credit Card Payment", "2", <ContainerOutlined />),
             this.getItem("Car Payment", "3", <CarOutlined />),
@@ -35,7 +37,9 @@ export default class Sidebar extends Component {
             this.getItem("Loan Amount", "7", <BankOutlined />),
             this.getItem("Monthly Mortgage Payment", "8", <HomeOutlined />),
             this.getItem("Credit Score", "9", <CreditCardOutlined />),
-          ]};
+            this.getItem("Results", "10", <CheckOutlined />),
+          ],
+        };
     }
 
     render() {
