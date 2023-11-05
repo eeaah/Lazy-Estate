@@ -34,13 +34,13 @@ export default class Sidebar extends Component {
             this.getItem("Down Payment", "6", <ArrowDownOutlined />),
             this.getItem("Loan Amount", "7", <BankOutlined />),
             this.getItem("Monthly Mortgage Payment", "8", <HomeOutlined />),
-            this.getItem("CreditScore", "9", <CreditCardOutlined />),
+            this.getItem("Credit Score", "9", <CreditCardOutlined />),
           ]};
     }
 
         render() {
             return(
-                <div style={{ width: 256 }} >
+                <div style={{ width: 256, margin }} >
                 <Menu
                     defaultSelectedKeys={["1"]}
                     defaultOpenKeys={["sub1"]}
