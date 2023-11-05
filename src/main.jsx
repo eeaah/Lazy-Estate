@@ -16,14 +16,14 @@ import CreditScore from './forms/creditScore.jsx'
 import Results from './forms/results.jsx'
 // End forms
 import SideBar from './components/sidebar.jsx'
-import { Layout, theme } from 'antd';
+import { Layout, Space, theme } from 'antd';
 import { HomeTwoTone } from '@ant-design/icons'
-import 'chart.js'
 // import ChartHandler from './chartHandler.jsx'
 import ParseCSV from './parser.jsx'
+import ProgressBar from './components/progressBar.jsx'
 
 const { Header, Content, Sider } = Layout;
-let arr = [0,0,0,0,0,0,0,0,0];
+let arr = [null,null,null,null,null,null,null,null,null];
 
 
 export default class Forms extends Component {
@@ -76,7 +76,7 @@ export default class Forms extends Component {
     }
 
     componentDidUpdate(prevState) {
-        if (this.formnum !== prevState.formnum) {
+        if (this.state.formnum !== prevState.formnum) {
             console.log('form updated')
             this.render()
         }
@@ -87,6 +87,9 @@ export default class Forms extends Component {
         return (
             <div>
                 {this.state.outputforms[this.state.formnum - 1]}
+                <div class="container" style={{marginLeft:'auto', marginRight:'auto', marginTop:180, width:1000, height:50, align:'center', display:'flex,', backgroundColor:'white'}}>
+                    <ProgressBar array={arr}/>
+                </div>
             </div>
         );
     }
@@ -134,9 +137,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             }}
           >
             <Forms />
+            
           </Content>
         </Layout>
         </div>
+        <div />
         {/* <ChartHandler /> */}
     </Layout>
     {/* <div style={{

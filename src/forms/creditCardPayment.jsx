@@ -16,7 +16,7 @@ export default class CreditCardPayment extends Component {
         </center>
         <div className="container">
           <div className="paragraph">
-            <p>Your average monthly credit card payment. A typical American spends $430 a month.</p>
+            <p>Your average monthly credit card payment. A typical American spends $430/month.</p>
           </div>
         </div>
         <center>

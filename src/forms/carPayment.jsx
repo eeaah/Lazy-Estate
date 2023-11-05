@@ -16,7 +16,7 @@ export default class CarPayment extends Component {
         </center>
         <div className="container">
           <div className="paragraph">
-            <p>The total montly amount you put towards car payments.</p>
+            <p>The total monthly amount you put towards car payments.</p>
           </div>
         </div>
         <center>

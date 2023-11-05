@@ -12,6 +12,7 @@ import {
 import { Button, Menu } from "antd";
 import eventBus from '../eventBus.jsx'
 
+
 export default class Sidebar extends Component {
     getItem(label, key, icon, children, type) {
         return {
@@ -44,7 +45,7 @@ export default class Sidebar extends Component {
 
     render() {
         return(
-            <div style={{ width: 256}} >
+            <div style={{ width: 256, borderSpacing:10 }} >
             <Menu
                 defaultSelectedKeys={["1"]}
                 defaultOpenKeys={["sub1"]}

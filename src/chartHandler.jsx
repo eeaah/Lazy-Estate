@@ -1,4 +1,3 @@
-import 'chart.js'
 import React, { Component } from 'react'
 import eventBus from './eventBus.jsx'
 import AppraisedValueChart from './charts/appraisedValueChart.jsx'
@@ -33,7 +32,7 @@ import StudentLoanPaymentChart from './charts/studentLoanPaymentChart.jsx'
 //     }
 
 //     componentDidUpdate(prevState) {
-//         if (this.chartnum !== prevState.formnum) {
+//         if (this.state.chartnum !== prevState.formnum) {
 //             console.log('chart updated')
 //             this.render()
 //         }

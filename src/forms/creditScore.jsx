@@ -16,7 +16,7 @@ export default class CreditScore extends Component {
         </center>
         <div className="container">
           <div className="paragraph">
-            <p>A prediction of how likely you are to pay a loan back on time based on information from your credit reports..</p>
+            <p>A prediction of how likely you are to pay a loan back on time based on information from your credit reports.</p>
           </div>
         </div>
         <center>
