@@ -7,8 +7,8 @@ export default function Info({ credit, LTV, DTI, FEDTI }) {
       <div className="tips">
         {
           {
-            true:<Alert message="Your credit Score is good." type="success" />,
-            false:<Alert message="Your credit score is too low. You can improve your score by maintaining low balances, paying your bills on time and limiting how often you apply for new accounts." type="error" />
+            false:<Alert message="Your credit Score is good." type="success" />,
+            true:<Alert message="Your credit score is too low. You can improve your score by maintaining low balances, paying your bills on time and limiting how often you apply for new accounts." type="error" />
           }[credit]
         }
       </div>
