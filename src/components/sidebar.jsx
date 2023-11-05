@@ -40,7 +40,7 @@ export default class Sidebar extends Component {
 
         render() {
             return(
-                <div style={{ width: 256, margin }} >
+                <div style={{ width: 256}} >
                 <Menu
                     defaultSelectedKeys={["1"]}
                     defaultOpenKeys={["sub1"]}

@@ -48,14 +48,14 @@ const headerStyle = {
     height: 64,
     paddingInline: 50,
     lineHeight: '64px',
-    backgroundColor: '#7dbcea',
+    backgroundColor: 'rgb(22,119,255)',
   };
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Layout>
-      <Header style={{backgroundColor: 'rgb(230,244,255)'}}/>
+      <Header style={{headerStyle}}/>
     </Layout>
     <Layout>
         <div style={{
