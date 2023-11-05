@@ -7,6 +7,9 @@ import CreditCardPayment from './forms/creditCardPayment.jsx'
 import MonthlyIncome from './forms/monthlyIncome.jsx'
 import SideBar from './components/sidebar.jsx'
 import { Layout, theme } from 'antd';
+import { HomeTwoTone } from '@ant-design/icons'
+import 'chart.js'
+import ChartHandler from './chartHandler.jsx'
 
 const { Header, Content, Sider } = Layout;
 
@@ -27,7 +30,7 @@ export default class Forms extends Component {
 
     componentDidUpdate(prevState) {
         if (this.formnum !== prevState.formnum) {
-            console.log('updated')
+            console.log('form updated')
             this.render()
         }
         console.log(this.state.formnum)
@@ -50,7 +53,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Header style={{backgroundColor:'rgb(22,119,255)'}}>
         <center style={{color:'rgb(255,255,255)', fontFamily: 'tahoma, sans-serif'}}>
             <font size="+3">
-            <b>LazyEstate</b>
+            <HomeTwoTone /> <b>LazyEstate</b>
             </font>
         </center>
         </Header>
@@ -86,6 +89,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           </Content>
         </Layout>
         </div>
+        <ChartHandler />
     </Layout>
     {/* <ParseCSV /> */}
     {/* <div style={{

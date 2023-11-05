@@ -1,6 +1,8 @@
 import React, { CSSProperties, useEffect } from 'react';
 import Papa from 'papaparse'
 
+let darr = []
+
 export default function ParseCSV() {
     useEffect(() => {
         const fetchParseData = async() => {
@@ -8,7 +10,7 @@ export default function ParseCSV() {
                 download: true,
                 header: false,
                 complete: ((result) => {
-                    console.log(result)
+                    darr = [...result]
                 })
             })
         }
