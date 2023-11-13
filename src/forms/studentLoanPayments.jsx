@@ -16,7 +16,7 @@ export default class StudentLoanPayments extends Component {
         </center>
         <div className="container">
           <div className="paragraph">
-            <p>The monthly payment on your student loans to your loan servicer.</p>
+            <p>The monthly payment on your student loans to your <a href="https://en.wikipedia.org/wiki/Loan_servicing">loan servicer</a>.</p>
           </div>
         </div>
         <center>

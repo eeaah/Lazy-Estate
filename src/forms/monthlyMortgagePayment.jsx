@@ -16,7 +16,7 @@ export default class MonthlyMortgagePayment extends Component {
         </center>
         <div className="container">
           <div className="paragraph">
-            <p>The principal and interest payment on a mortgage is the main component of your monthly mortgage payment. The principal is the amount you borrowed and have to pay back, and interest is what the lender charges for lending you the money.</p>
+            <p>The <a href="https://www.investopedia.com/terms/p/principal.asp">principal</a> and interest payment on a mortgage is the main component of your monthly mortgage payment. The principal is the amount you borrowed and have to pay back, and interest is what the lender charges for lending you the money.</p>
           </div>
         </div>
         <center>

@@ -16,7 +16,7 @@ export default class AppraisedValue extends Component {
         </center>
         <div className="container">
           <div className="paragraph">
-            <p>An appraised value is a professional assessment of the condition and worth of a your property at this time. This is the value of your property and/or home.</p>
+            <p>An <a href="https://en.wikipedia.org/wiki/Appraised_value#:~:text=An%20appraised%20value%20(United%20States,a%20qualified%20appraiser%20or%20valuer.">appraised value</a> is a professional assessment of the condition and worth of your property at this time. This is the value of your property and/or home.</p>
           </div>
         </div>
         <center>

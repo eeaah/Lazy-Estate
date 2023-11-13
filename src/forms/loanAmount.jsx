@@ -8,6 +8,13 @@ const onChange = (value) => {
 };
 
 export default class LoanAmount extends Component {
+  constructor(props) {
+		super(props);
+		// this.state = {
+		// 	enteredVal: 0
+		// }
+
+  }
   render() {
     return (
       <div>
@@ -16,7 +23,7 @@ export default class LoanAmount extends Component {
         </center>
         <div className="container">
           <div className="paragraph">
-            <p>The amount of money you owe at any given time. The loan amount may include unpaid principal, interest on unpaid principal, defaulted payments, interest on defaulted payments, other charges and interest on other charges.</p>
+            <p>The amount of money you owe at any given time. The loan amount may include unpaid <a href="https://en.wikipedia.org/wiki/Debt">principal</a>, interest on unpaid principal, defaulted payments, interest on defaulted payments, other charges and interest on other charges.</p>
           </div>
         </div>
         <center>
